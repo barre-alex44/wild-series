@@ -30,14 +30,10 @@ class WildController extends AbstractController
      */
     public function show($slug) :Response
     {
-        try
-        {
+
             return $this->render('wild/show.html.twig', [
                 'slug' => str_replace('-', ' ', ucwords($slug, '-')),
             ]);
-        }
-        catch (\Exception $error){
-            $error->getMessage("erreur 404");
-        }
+
     }
 }
