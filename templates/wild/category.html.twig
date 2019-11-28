@@ -1,0 +1,17 @@
+{% extends "base.html.twig" %}
+
+{% block title %}All categories{% endblock %}
+{% block body %}
+    <h1>Toutes les series de la table {{ category.name }} : </h1>
+    <div>
+        <h2>Catégorie : {{ category.name }}</h2>
+        {% for program in programs %}
+            <p>{{ program.title }}</p>
+        {% else %}
+            Aucune série trouvée.
+        {% endfor %}
+    </div>
+    <a href="{{ path('wild_index') }}">
+        Retour à l'accueil
+    </a>
+{% endblock %}
