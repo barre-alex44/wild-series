@@ -104,4 +104,21 @@ class WildController extends AbstractController
             'category' => $category,
         ]);
     }
+    /**
+     * @param int $id
+     * @return Response
+     * @Route("/")
+     */
+    public function showBySeason (int $id): Response
+    {
+        $program = $this->getDoctrine()
+        ->getRepository(Program::class)
+        ->find($id);
+
+
+    }
+
+
+
+
 }
