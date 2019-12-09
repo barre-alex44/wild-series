@@ -4,13 +4,20 @@
         <a class="nav-link active" href="/">Wild Série</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Much longer nav link</a>
+        <a class="nav-link" href="{{ path('wild_index') }}">Accueil</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="{{ path("program_index")}}">Program</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ path("episode_index")}}">Episodes</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ path("season_index")}}">Season</a>
     </li>
     <li class="nav-item">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
     </li>
 </ul>
+
 

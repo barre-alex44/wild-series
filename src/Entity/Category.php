@@ -52,7 +52,7 @@ class Category
     }
 
     /**
-     * @return Collection|rogram[]
+     * @return Collection|Program[]
      */
     public function getPrograms(): Collection
     {
