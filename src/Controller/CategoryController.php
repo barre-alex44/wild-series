@@ -6,7 +6,6 @@ namespace App\Controller;
 
 use App\Entity\Category;
 use App\Form\CategoryType;
-use App\Form\ProgramSearchType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

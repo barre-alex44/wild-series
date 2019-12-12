@@ -1,0 +1,28 @@
+{% extends './base.html.twig' %}
+{% block title %}{{ programName.title }}{% endblock %}
+
+
+{% block body %}
+    {% include './navbar.html.twig' %}
+    <h1>{{ slug }}</h1>
+
+    {#{% for program in programName %}#}
+    {% for season in listSeason %}
+
+        <div class="media">
+            <div class="media-body">
+                <!--<h1 class="mt-0">saison : {{ season.program.title }}</h1>-->
+                <a href="{{ path('wild_showBySeason', { 'id': season.id }) }}">{{ season.description }}</a>
+                <p>{{ season.year }}</p>
+            </div>
+        </div>
+
+    {% endfor %}
+
+    <div>
+        <a href="{{ path('wild_index') }}">
+            Retour à l'accueil
+        </a>
+    </div>
+
+{% endblock %}
