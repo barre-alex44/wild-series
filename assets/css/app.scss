@@ -1,5 +1,24 @@
-body {
-    background-color: #C82829 !important;
+
+*{
+    color: blue;
 }
+
+p{
+    color: white;
+}
+
+body {
+    background-color: gray !important;
+    align-content: center;
+}
+
+
+img {
+    display: block;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 @import "~bootstrap/scss/bootstrap";

@@ -22,7 +22,7 @@
         <strong>Séries</strong>
         <ul>
             {%  for program in actor.programs %}
-                <li><a href="{{ path('program_index', {'slug': program.title}) }}">{{ program.title }}</a></li>
+                <li><a href="{{ path('program_show', {'id': program.id}) }}">{{ program.title }}</a></li>
             {% endfor %}
         </ul>
     </div>
